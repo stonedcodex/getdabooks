@@ -9,6 +9,6 @@ uv.lock
 .env 
 .venv
 *.pdf
-*.pyc
+*.xpyc
 # Virtual environments
 .venv
