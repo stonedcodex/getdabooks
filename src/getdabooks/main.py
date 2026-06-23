@@ -35,6 +35,7 @@ def main(curr_url, max_length=150):
         title = title.replace("*","").strip()
         title = title.replace("]", '-').strip()
         title = title.replace("[", '-').strip()
+        title = title.replace("/", '').strip()
         title = title.replace(",", '').strip()
         title = title[:max_length].strip()
         for a in soup.find_all('a'):

@@ -1,18 +1,25 @@
 [project]
+authors = [
+  { name="stonedcodex"},
+]
 name = "getdabooks"
 version = "1.1.0"
-description = "Add your description here"
+description = "Gets books from ANNA's Archive using page link (automatically picks slow downloads)"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.15.0",
     "bs4>=0.0.2",
+    "build>=1.5.0",
     "playwright>=1.60.0",
     "playwright-stealth>=2.0.3",
     "requests>=2.34.2",
     "response>=0.5.0",
+    "twine>=6.2.0",
     "urllib3>=2.7.0",
 ]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
 
 [project.scripts]
 getdabooks = "getdabooks.main:run"
